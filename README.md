@@ -8,8 +8,8 @@
 
 ## Live Demo
 
-- http://localhost:8888/lab/tree/roadkill_map/roadkill_prediction_map.html  
-- http://localhost:8888/lab/tree/roadkill_map/roadkill_heatmap.html  
+- https://inseongbeen.github.io/roadkill_map/saved_resource_heatmap.html  
+- https://inseongbeen.github.io/roadkill_map/saved_resource_predict.html
 
 ## GitHub Repo
 
