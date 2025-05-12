@@ -72,25 +72,25 @@ https://lnjjang.tistory.com/
 
 ```
 roadkill_map/
-├── README.md #프로젝트 설명서
-├── requirements.txt
+├── README.md                 # 프로젝트 설명서
+├── requirements.txt          # 패키지 목록
 │
-├── 📁 data/
-│   ├── raw/
-│   ├── processed/
-│   └── external/
+├── 📁 data/                  # 원본 및 처리된 데이터
+│   ├── raw/                 # 원본 CSV, API 응답 등
+│   ├── processed/           # 전처리된 CSV
+│   └── external/            # OSM 등 외부 연계 데이터
 │
-├── 📁 src/
+├── 📁 src/                   # 핵심 분석 모듈
 │   ├── __init__.py
-│   ├── main.py
-│   ├── collect_data.py
-│   ├── preprocess.py
-│   ├── model.py
-│   └── visualize.py
+│   ├── main.py              # 실행 스크립트
+│   ├── collect_data.py      # 데이터 수집 (API 등)
+│   ├── preprocess.py        # 전처리 및 Feature Engineering
+│   ├── model.py             # 모델 학습 및 예측
+│   └── visualize.py         # 지도 및 그래프 시각화
 │
 ├── 📁 outputs/
-│   ├── maps/
-│   └── plots/
+│   ├── maps/                # Folium 지도 (HTML)
+│   └── plots/               # 문서/이미지 자료
 │
 └── 📁 docs/
     └── architecture.png
