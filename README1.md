@@ -67,6 +67,67 @@ https://lnjjang.tistory.com/
 
 ---
 
+
+## 📁 디렉토리 구조
+
+```
+roadkill_map/
+├── README.md #프로젝트 설명서
+├── requirements.txt
+│
+├── 📁 data/
+│   ├── raw/
+│   ├── processed/
+│   └── external/
+│
+├── 📁 src/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── collect_data.py
+│   ├── preprocess.py
+│   ├── model.py
+│   └── visualize.py
+│
+├── 📁 outputs/
+│   ├── maps/
+│   └── plots/
+│
+└── 📁 docs/
+    └── architecture.png
+```
+
+---
+
+## 🚀 실행 방법
+
+1. 레포지토리 클론
+```bash
+git clone https://github.com/INSEONGBEEN/roadkill_map.git
+cd roadkill_map
+```
+
+2. 가상환경 생성 및 패키지 설치
+```bash
+python -m venv venv
+source venv/bin/activate   # (Windows: venv\Scripts\activate)
+pip install -r requirements.txt
+```
+
+3. 데이터 준비 (선택)
+- `data/raw/`에 로드킬 원본 CSV 및 외부 데이터 위치
+
+4. 메인 실행
+```bash
+python src/main.py
+```
+
+5. 결과 확인
+- 예측 지도: `outputs/maps/saved_resource_predict.html`
+- 히트맵: `outputs/maps/saved_resource_heatmap.html`
+- 시각화 이미지: `outputs/plots/`
+
+---
+
 ## 📊 모델 성능
 
 - **랜덤포레스트 회귀**: R² 0.06
